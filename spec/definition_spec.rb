@@ -9,13 +9,13 @@ describe(Definition) do
 
 
 
-	# describe('#definition') do
-	# 	it('returns the definition of a word') do
-	# 		test_definition = Definition.new("is really cool")
-	# 		test_definition.save()
-	# 		expect(test_definition.definition()).to(eq("is really cool"))
-	# 	end
-	# end
+	describe('#definition') do
+		it('returns the definition of a word') do
+			test_definition = Definition.new("is really cool")
+			test_definition.save()
+			expect(test_definition.definition()).to(eq("is really cool"))
+		end
+	end
 
 	define_singleton_method('.all') do
 		it('is empty at first') do
