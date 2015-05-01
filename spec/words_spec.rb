@@ -40,6 +40,15 @@ describe(Words) do
 		end
 	end
 
+	describe('.clear') do
+		it('empties out all saved words from the array') do
+			Words.new("ian").save()
+			Words.clear()
+			expect(Words.all()).to(eq([]))
+		end
+	end
+
+
 
 
 
