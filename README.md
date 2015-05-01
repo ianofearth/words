@@ -19,7 +19,7 @@ of multipe words and associate multiple words and associate multiple definitions
 <li>Follow the onscreen instructions to begin creating your dictionary!</li>
 </ol>
 </p>
-#The page can be visited via heroku at the following URL: https://whispering-eyrie-6287.herokuapp.com/
+<h3>The page can be visited via heroku at the following URL: https://whispering-eyrie-6287.herokuapp.com/ </h3>
 #Bug reports: <p>There are currently no known bugs to words.  Any discovered bugs should be reoprted 
 directly to the programs creator at thisisnotarealemail@gmail.com</p>
 #Licenses and Copywright info: <p>ianofearth License.  Copyright 2015 ianofearth industries.</p>
