@@ -60,6 +60,11 @@ describe(Word) do
 		end
 	end
 
+	# describe('#add_definition') do
+	# 	it('adds a new definition to a word') do
+	# 		test_word = Word.new("ian")
+	# 		test_definition = 
+
 
 
 
