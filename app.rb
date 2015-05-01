@@ -17,6 +17,14 @@ get('/words') do
 	erb(:words)
 end
 
+post('/words') do
+	word = params.fetch('word') #first word in this line may be name
+	Word.new(word).save() #word may be name here too
+	@words = Word.all()
+	ern(:success)
+end
+
+
 
 	
 end
