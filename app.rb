@@ -8,6 +8,10 @@ get('/') do
 	erb(:index)
 end
 
+get('/words/new') do
+	erb(:words_form)
+end
+
 
 	
 end
