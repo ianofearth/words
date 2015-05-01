@@ -12,6 +12,13 @@ describe(Words) do
 		end
 	end
 
+	describe('#id') do
+		it('returns the id of the word') do
+			test_word = Words.new("ian")
+			expect(test_word.id()).to(eq(1))
+		end
+	end
+
 
 
 
