@@ -39,3 +39,8 @@ get('/words/:id/definitions/new') do
 	erb(:word_definitions_form)
 end
 
+get('/definitions') do
+	@definitions = Definition.all()
+	erb(:definitions)
+end
+
