@@ -45,6 +45,16 @@ describe(Definition) do
 		end
 	end
 
+	describe('.find') do
+		it('returns a definition by its id') do
+			test_definition = Definition.new("is really cool")
+			test_definition.save()
+			test_definition2 = Definition.new("is bad at ruby")
+			test_definition2.save()
+			expect(Definition.find(test_definition.id())).to(eq(test_definition))
+		end
+	end
+
 
 
 
