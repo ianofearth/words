@@ -6,12 +6,6 @@ class Definition
 		@id = @@definitions.length().+(1)
 	end
 
-
-
-	# define_method(:definition) do
-	# 	@definition
-	# end
-
 	define_singleton_method(:all) do
 		@@definitions
 	end
@@ -19,6 +13,10 @@ class Definition
 	define_method(:save) do
 		@@definitions.push(self)
 	end
+
+	# define_method(:definition) do
+	# 	@definition
+	# end
 
 
 end
