@@ -18,8 +18,8 @@ get('/words') do
 end
 
 post('/words') do
-	word = params.fetch('word') #first word in this line may be name
-	Word.new(word).save() #word may be name here too
+	word = params.fetch('word')
+	Word.new(word).save()
 	@words = Word.all()
 	erb(:success)
 end
