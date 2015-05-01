@@ -1,7 +1,6 @@
 #Author Name: Ian Bevel
 #Program Name: words
-#Description: <p>The words program is a ruby program that will allow the user to create a dictionary 
-of multipe words and associate multiple words and associate multiple definitions with those words.</p>
+#Description: <p>The words program is a ruby program that will allow the user to create a dictionary of multipe words and associate multiple words and associate multiple definitions with those words.</p>
 #Set-up instructions: 
 <p>All gems in Gemfile must be bundled and a Gemfile.lock file created prior to running this app.</p>
 <ol>
