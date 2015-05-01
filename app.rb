@@ -24,7 +24,7 @@ post('/words') do
 	ern(:success)
 end
 
-
-
-	
+get('/definitions/:id') do
+	@definition = Definition.find(params.fetch('id'))
+	erb(:definition)
 end
