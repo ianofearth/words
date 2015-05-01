@@ -68,6 +68,4 @@ describe(Word) do
 			expect(test_word.dictionary()).to(eq([test_definition]))
 		end
 	end
-
-
 end

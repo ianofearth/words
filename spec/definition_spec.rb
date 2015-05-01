@@ -54,8 +54,4 @@ describe(Definition) do
 			expect(Definition.find(test_definition.id())).to(eq(test_definition))
 		end
 	end
-
-
-
-
 end
