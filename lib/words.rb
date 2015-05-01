@@ -23,6 +23,10 @@ class Words
 		@@words
 	end
 
+	define_method(:save) do
+		@@words.push(self)
+	end
+ 
 
 
 
