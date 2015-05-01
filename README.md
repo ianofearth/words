@@ -23,5 +23,4 @@ of multipe words and associate multiple words and associate multiple definitions
 #Bug reports: <p>There are currently no known bugs to words.  Any discovered bugs should be reoprted 
 directly to the programs creator at thisisnotarealemail@gmail.com</p>
 #Licenses and Copywright info: <p>ianofearth License.  Copyright 2015 ianofearth industries.</p>
-#<h2>You are not granted rights or licenses to the trademarks of ianofearth industries without the 
-express written consent of ianofearth industries.</h2>
+#<h2>You are not granted rights or licenses to the trademarks of ianofearth industries without the express written consent of ianofearth industries.</h2>
