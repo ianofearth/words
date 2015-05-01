@@ -4,6 +4,11 @@ class Definition
 	define_method(:initialize) do |definition|
 		@definition = definition
 		@id = @@definitions.length().+(1)
+		@dictionary = [] ##added for troubleshoot
+	end
+
+	define_method(:dictionary) do #added for troubleshoot
+		@dictionary
 	end
 
 	define_singleton_method(:all) do

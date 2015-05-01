@@ -1,10 +1,10 @@
 <h3>Here are the definitions for your word:</h3>
 
 <ul>
-	<% @word.dictionary().each() do |member| %>
-	<li><a href='/definitions/<%= member.id() %>'><%= member.definition() %></a></li>
+	<% @word.dictionary().each() do |dictionary| %>
+	<li><a href='/definitions/<%= dictionary.id() %>'><%= dictionary.definition() %></a></li>
 	<% end %>
 </ul>
 
-<a href='/Words/<%= @word.id %>/definitions/new'>Add another definition</a>
+<a href='/words/<%= @word.id %>/definitions/new'>Add another definition</a>
 <a href='/'>Return to home page</a>
