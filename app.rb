@@ -28,3 +28,9 @@ get('/definitions/:id') do
 	@definition = Definition.find(params.fetch('id'))
 	erb(:definition)
 end
+
+get('/words/:id') do
+	@word = Word.find(params.fetch('id')) #need .to_i?
+	erb(:word)
+end
+

@@ -4,7 +4,7 @@
 
 <ul>
 	<% @word.dictionary().each do |member| %>
-	<li><a href='/definitions/<%=dictionary.id() %>'><%= dictionary.definition() %></a></li>
+	<li><a href='/definitions/<%=member.id() %>'><%= member.definition() %></a></li>
 	<% end %>
 </ul>
 
