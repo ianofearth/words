@@ -42,13 +42,13 @@ describe(Word) do
 		end
 	end
 
-	# describe('.clear') do
-	# 	it('empties out all saved words from the array') do
-	# 		Word.new("ian").save()
-	# 		Word.clear()
-	# 		expect(Word.all()).to(eq([]))
-	# 	end
-	# end
+	describe('.clear') do
+		it('empties out all saved words from the array') do
+			Word.new("ian").save()
+			Word.clear()
+			expect(Word.all()).to(eq([]))
+		end
+	end
 
 	# describe('.find') do
 	# 	it('returns a word by its id number') do

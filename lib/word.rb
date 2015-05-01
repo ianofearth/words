@@ -27,9 +27,9 @@ class Word
 		@@word.push(self)
 	end
 
-	# define_singleton_method(:clear) do
-	# 	@@word = []
-	# end
+	define_singleton_method(:clear) do
+		@@word = []
+	end
  
 
 
