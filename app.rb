@@ -34,3 +34,8 @@ get('/words/:id') do
 	erb(:word)
 end
 
+get('/words/:id/definitions/new') do
+	@word = Word.find(params.fetch('id')) #need .to_i?
+	erb(:word_definitions_form)
+end
+
