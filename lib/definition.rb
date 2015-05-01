@@ -22,5 +22,9 @@ class Definition
 		@definition
 	end
 
+	define_method(:id) do
+		@id
+	end
+
 
 end
