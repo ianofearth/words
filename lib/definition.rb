@@ -18,9 +18,9 @@ class Definition
 		@@definitions = []
 	end
 
-	# define_method(:definition) do
-	# 	@definition
-	# end
+	define_method(:definition) do
+		@definition
+	end
 
 
 end
