@@ -23,9 +23,9 @@ class Word
 		@@word
 	end
 
-	# define_method(:save) do
-	# 	@@word.push(self)
-	# end
+	define_method(:save) do
+		@@word.push(self)
+	end
 
 	# define_singleton_method(:clear) do
 	# 	@@word = []
