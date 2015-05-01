@@ -28,11 +28,11 @@ describe(Word) do
 		end
 	end
 
-	# describe('.all') do
-	# 	it('is empty at first') do
-	# 		expect(Word.all()).to(eq([]))
-	# 	end
-	# end
+	describe('.all') do
+		it('is empty at first') do
+			expect(Word.all()).to(eq([]))
+		end
+	end
 
 	# describe('#save') do
 	# 	it('adds a word to the array of saved words') do

@@ -19,9 +19,9 @@ class Word
 		@dictionary
 	end
 
-	# define_singleton_method(:all) do
-	# 	@@word
-	# end
+	define_singleton_method(:all) do
+		@@word
+	end
 
 	# define_method(:save) do
 	# 	@@word.push(self)
