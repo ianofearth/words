@@ -26,6 +26,18 @@ describe(Words) do
 		end
 	end
 
+	describe('.all') do
+		it('is empty at first') do
+			expect(Words.all()).to(eq([]))
+		end
+	end
+
+	# describe('#save') do
+	# 	it('adds a word to the array of saved words') do
+	# 		test_word = Words.new("ian")
+	# 		test_word.save()
+	# 		expect(Words.all())
+
 
 
 

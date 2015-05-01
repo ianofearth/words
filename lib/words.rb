@@ -19,6 +19,10 @@ class Words
 		@dictionary
 	end
 
+	define_singleton_method(:all) do
+		@@words
+	end
+
 
 
 
