@@ -21,12 +21,12 @@ describe(Word) do
 		end
 	end
 
-	# describe('#dictionary') do
-	# 	it('initially returns an empty array of cars for the dictionary') do
-	# 		test_word = Word.new("ian")
-	# 		expect(test_word.dictionary()).to(eq([]))
-	# 	end
-	# end
+	describe('#dictionary') do
+		it('initially returns an empty array of cars for the dictionary') do
+			test_word = Word.new("ian")
+			expect(test_word.dictionary()).to(eq([]))
+		end
+	end
 
 	# describe('.all') do
 	# 	it('is empty at first') do

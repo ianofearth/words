@@ -15,9 +15,9 @@ class Word
 		@id
 	end
 
-	# define_method(:dictionary) do
-	# 	@dictionary
-	# end
+	define_method(:dictionary) do
+		@dictionary
+	end
 
 	# define_singleton_method(:all) do
 	# 	@@word
