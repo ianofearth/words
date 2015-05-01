@@ -44,3 +44,13 @@ get('/definitions') do
 	erb(:definitions)
 end
 
+post('/definitions') do
+	definition = params.fetch('definition')
+	@definitions = Definition.all()
+	@definition = Definition.new(definition)
+	@definition.save()
+	@word = Word.find(params.fetch('word_id')) #need .to_i?
+	@word.add_definition(@definition)
+	erb(:definitions)
+end
+
