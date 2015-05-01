@@ -7,11 +7,7 @@ describe(Definition) do
 	# 	Definition.clear()
 	# end
 
-	define_singleton_method('.all') do
-		it('is empty at first') do
-			expect(Definition.all()).to(eq([]))
-		end
-	end
+
 
 	# describe('#definition') do
 	# 	it('returns the definition of a word') do
@@ -21,13 +17,19 @@ describe(Definition) do
 	# 	end
 	# end
 
-	# describe('#save') do
-	# 	it('adds a definition to the array of saved definitions') do
-	# 		test_definition = Definition.new("is really cool")
-	# 		test_definition.save()
-	# 		expect(Definition.all()).to(eq([test_definition]))
-	# 	end
-	# end
+	define_singleton_method('.all') do
+		it('is empty at first') do
+			expect(Definition.all()).to(eq([]))
+		end
+	end
+
+	describe('#save') do
+		it('adds a definition to the array of saved definitions') do
+			test_definition = Definition.new("is really cool")
+			test_definition.save()
+			expect(Definition.all()).to(eq([test_definition]))
+		end
+	end
 
 
 
