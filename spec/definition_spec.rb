@@ -29,13 +29,21 @@ describe(Definition) do
 		end
 	end
 
-	#describe('#definition') do
-	# 	it('returns the definition of a word') do
-	# 		test_definition = Definition.new("is really cool")
-	# 		test_definition.save()
-	# 		expect(test_definition.definition()).to(eq("is really cool"))
-	# 	end
-	# end
+	describe('#definition') do
+		it('returns the definition of a word') do
+			test_definition = Definition.new("is really cool")
+			test_definition.save()
+			expect(test_definition.definition()).to(eq("is really cool"))
+		end
+	end
+
+	describe('#id') do
+		it('returns the id of the definition') do
+			test_definition = Definition.new("is really cool")
+			test_definition.save()
+			expect(test_definition.id()).to(eq(1))
+		end
+	end
 
 
 
