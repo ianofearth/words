@@ -3,9 +3,9 @@ require('word')
 require('definition')
 
 describe(Word) do
-	# before() do
-	# 	Word.clear()
-	# end
+	before() do
+		Word.clear()
+	end
 
 	describe('#word') do
 		it('returns a word entered') do
@@ -50,11 +50,15 @@ describe(Word) do
 		end
 	end
 
-	# describe('.find') do
-	# 	it('returns a word by its id number') do
-	# 		test_word = Word.new
-	# 	end
-	# end
+	describe('.find') do
+		it('returns a word by its id number') do
+			test_word = Word.new("ian")
+			test_word.save()
+			test_word2 = Word.new("bevel")
+			test_word2.save()
+			expect(Word.find(test_word.id())).to(eq(test_word))
+		end
+	end
 
 
 

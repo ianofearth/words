@@ -1,9 +1,9 @@
 class Word
-	@@word = []
+	@@words = []
 
 	define_method(:initialize) do |instance|
 		@word = instance
-		@id = @@word.length().+(1)
+		@id = @@words.length().+(1)
 		@dictionary = []
 	end
 
@@ -20,15 +20,25 @@ class Word
 	end
 
 	define_singleton_method(:all) do
-		@@word
+		@@words
 	end
 
 	define_method(:save) do
-		@@word.push(self)
+		@@words.push(self)
 	end
 
 	define_singleton_method(:clear) do
-		@@word = []
+		@@words = []
+	end
+
+	define_singleton_method(:find) do |id|
+		found_word = nil
+		@@words.each() do |word|
+			if word.id().eql?(id)
+				found_word = word
+			end
+		end
+		found_word
 	end
  
 
