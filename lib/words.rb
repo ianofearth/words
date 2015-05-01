@@ -4,6 +4,7 @@ class Words
 	define_method(:initialize) do |word|
 		@word = word
 		@id = @@words.length().+(1)
+		@dictionary = []
 	end
 
 	define_method(:word) do
@@ -12,6 +13,10 @@ class Words
 
 	define_method(:id) do
 		@id
+	end
+
+	define_method(:dictionary) do
+		@dictionary
 	end
 
 
